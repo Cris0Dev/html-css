@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>producto</title>
+</head>
+
+<body>
+    <h1>Registro de producto</h1>
+    <form action="./dato-guardado.html">
+        <div class="row">
+            <label class="col-25" for="codigo">Codigo</label>
+            <input class="col-75" type="text" name="codigo" id="codigo">
+        </div>
+
+        <div class="row">
+            <label class="col-25" for="descripcion">Descripción</label>
+            <input class="col-75" type="text" name="descripcion" id="descripcion">
+        </div>
+
+        <div class="row">
+            <label class="col-25" for="c-barra">Codigo de barra</label>
+            <input class="col-75" type="text" name="c-barra" id="c-barra">
+        </div>
+
+        <div class="row">
+            <label class="col-25" for="precio-u">Precio unitario</label>
+        <input class="col-75" type="text" name="precio-u" id="precio-u">
+        </div>
+        
+        <div class="row">
+            <label class="col-25" for="stock">Stock</label>
+        <input class="col-75" type="text" name="stock" id="stock">
+
+        </div>
+
+        <div class="row">
+            <label class="col-25" for="proveedor">Proveedor</label>
+            <input class="col-75" type="text" name="proveedor" id="proveedor">
+        </div>
+       
+
+        <div class="row">
+            <label class="" for="estado">Estado</label>
+        <input class="" type="radio" name="estado" id="estado">
+        </div>
+        
+        <div class="row">
+            <label class="col-25" for="categoria">Categoría</label>
+        <select class="col-75" id="categoria" name="categoria">
+            <option value="categoria 1">Categoría 1</option>
+            <option value="categoria 2">Categoría 2</option>
+            <option value="categoria 3">Categoría 3</option>
+            <option value="categoria 4">Categoría 4</option>
+        </select>
+        </div>
+        <div class="btn-row">
+            <input class="col-25" type="submit" value="Guardar">
+            <a href="./index.html" class=" col-25 btn btn-form">Cancelar</a>
+        </div>
+    </form>
+</body>
+
+</html>

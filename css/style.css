@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* estilos para la tabla */
+table,
+th,
+td {
+    border: 2px solid #000;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #ac5607;
+    color: white;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 4px;
+    padding: 6px 8px 6px 6px;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.btn img {
+    margin-right: 3px;
+}
+
+.btn-1 {
+    background-color: #008000;
+}
+
+.btn-1:hover {
+    background-color: #016301;
+}
+
+.btn-2 {
+    background-color: #0000ff;
+}
+
+.btn-2:hover {
+    background-color: #0202be;
+}
+
+.btn-3 {
+    background-color: #ff0000;
+}
+
+.btn-3:hover {
+    background-color: #c20404;
+}
+
+
+
+/* estilos del formulario */
+h1{
+    text-align: center;
+}
+form {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+input[type=text],
+select,
+textarea {
+    /* width: 100%; */
+    padding: 12px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #045aaa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: .4s;
+}
+
+input[type=submit]:hover {
+    background-color: #034380;
+}
+.row{
+    display: flex;
+}
+
+.col-25 {
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    width: 75%;
+    margin-top: 6px;
+}
+
+.btn-row{
+    margin-top: 2rem;
+display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.btn-form{
+    background-color: #b61e03;
+    color: white;
+    font-size: 14px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 5px;
+}
+.btn-form:hover{
+    background-color: #8a1804;
+}
+
+/* Clear floats after the columns Quitar flotantes despues de las columnas*/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/* 
+pagina de guardado */
+
+.box-save{
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    background-color: #dcdcdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    border-radius: 10px;
+}
+.box-save h1{
+    color: #002280;
+}
